@@ -100,7 +100,7 @@ Since `Ctrl+l` is taken for navigation, **`Ctrl+g` clears the screen** instead (
 Linux has no official Logitech software, so I wrote my own button logic with **Solaar rules** ([`solaar/.config/solaar/rules.yaml`](solaar/.config/solaar/rules.yaml)). The same physical button **does different things depending on the focused app**:
 
 ```mermaid
-flowchart TD
+flowchart LR
     M(("🖱️ M720<br/>Triathlon"))
 
     M --> MID["Middle click"]
