@@ -65,14 +65,18 @@
 Thanks to `vim-tmux-navigator` (tmux side) and `nvim-tmux-navigation` (Neovim side), **moving between Neovim splits and tmux panes uses the same keys**. The cursor doesn't care where one program ends and the other begins.
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph tmux["tmux window"]
-        direction LR
+        direction TB
         subgraph nvim["Neovim"]
-            A["split: code"] <-->|"Ctrl+l / Ctrl+h"| B["split: tests"]
+            direction LR
+            A["split: code"] <-->|"Ctrl+h / Ctrl+l"| B["split: tests"]
         end
-        B <-->|"Ctrl+l / Ctrl+h<br/>(crosses the boundary!)"| C["tmux pane: zsh"]
-        C <-->|"Ctrl+j / Ctrl+k"| D["tmux pane: server logs"]
+        subgraph panes["tmux panes"]
+            direction LR
+            C["pane: zsh"] <-->|"Ctrl+h / Ctrl+l"| D["pane: logs"]
+        end
+        nvim <-->|"Ctrl+j / Ctrl+k · crosses the boundary!"| panes
     end
 ```
 
