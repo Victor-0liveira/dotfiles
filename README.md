@@ -4,7 +4,7 @@
 
 **My Linux setup: a terminal-centric, keyboard-first (and mouse-gesture-powered) workflow on Ubuntu + GNOME.**
 
-<img src="assets/terminal.svg" alt="Alacritty + tmux + Starship + Neovim preview" width="100%"/>
+<img src="assets/screenshot.png" alt="Alacritty + tmux: Neovim with Neo-tree, hyfetch and the Starship prompt" width="100%"/>
 
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![GNOME](https://img.shields.io/badge/GNOME-4A86CF?style=for-the-badge&logo=gnome&logoColor=white)
