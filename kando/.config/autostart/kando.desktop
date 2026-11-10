@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=kando
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[fr_FR]=Kando
+Name=Kando
+Comment[fr_FR]=Comment: Start Kando at login
+Comment=Comment: Start Kando at login

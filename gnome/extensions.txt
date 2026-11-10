@@ -1,0 +1,16 @@
+# GNOME Shell extensions in daily use
+# install with: gnome-extensions install <uuid>  (or via extensions.gnome.org)
+blur-my-shell@aunetx
+dash-to-dock@micxgx.gmail.com
+focus-follows-workspace@christopher.luebbemeier.gmail.com
+highlight-focus@pimsnel.com
+improved-workspace-indicator@michaelaquilina.github.io
+kando-integration@kando-menu.github.io
+logomenu@aryan_k
+mousefollowsfocus@matthes.biz
+multi-monitors-add-on@spin83
+noannoyance@daase.net
+rounded-window-corners@yilozt
+solaar-extension@sidevesh
+toggler-custom@hedgie.tech
+user-theme@gnome-shell-extensions.gcampax.github.com

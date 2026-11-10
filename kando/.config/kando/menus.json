@@ -1,0 +1,166 @@
+{
+  "version": "3.0.0",
+  "menus": [
+    {
+      "root": {
+        "name": "Exemple de Menu",
+        "icon": "award_star",
+        "iconTheme": "material-symbols-rounded",
+        "type": "root",
+        "activateWorkflow": {
+          "quickSelectKey": "Backspace",
+          "actions": [
+            {
+              "type": "close-menu"
+            }
+          ]
+        },
+        "children": [
+          {
+            "name": "TerminalTerminal",
+            "icon": "gnometerminal",
+            "iconTheme": "simple-icons",
+            "type": "button",
+            "selectWorkflow": {
+              "actions": [
+                {
+                  "type": "inhibit-shortcuts"
+                },
+                {
+                  "type": "close-menu"
+                },
+                {
+                  "type": "execute-macro",
+                  "macro": [
+                    {
+                      "type": "keyDown",
+                      "delay": 10,
+                      "key": "MetaLeft"
+                    },
+                    {
+                      "type": "keyDown",
+                      "delay": 10,
+                      "key": "KeyI"
+                    },
+                    {
+                      "type": "keyUp",
+                      "delay": 10,
+                      "key": "KeyI"
+                    },
+                    {
+                      "type": "keyUp",
+                      "delay": 10,
+                      "key": "MetaLeft"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "Nautilus",
+            "icon": "files",
+            "iconTheme": "simple-icons",
+            "type": "button",
+            "selectWorkflow": {
+              "actions": [
+                {
+                  "type": "inhibit-shortcuts"
+                },
+                {
+                  "type": "close-menu"
+                },
+                {
+                  "type": "execute-macro",
+                  "macro": [
+                    {
+                      "type": "keyDown",
+                      "delay": 10,
+                      "key": "MetaLeft"
+                    },
+                    {
+                      "type": "keyDown",
+                      "delay": 10,
+                      "key": "KeyF"
+                    },
+                    {
+                      "type": "keyUp",
+                      "delay": 10,
+                      "key": "KeyF"
+                    },
+                    {
+                      "type": "keyUp",
+                      "delay": 10,
+                      "key": "MetaLeft"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "Configurações",
+            "icon": "files",
+            "iconTheme": "simple-icons",
+            "type": "button",
+            "selectWorkflow": {
+              "actions": [
+                {
+                  "type": "inhibit-shortcuts"
+                },
+                {
+                  "type": "close-menu"
+                },
+                {
+                  "type": "execute-macro",
+                  "macro": [
+                    {
+                      "type": "keyDown",
+                      "delay": 10,
+                      "key": "MetaLeft"
+                    },
+                    {
+                      "type": "keyDown",
+                      "delay": 10,
+                      "key": "KeyC"
+                    },
+                    {
+                      "type": "keyUp",
+                      "delay": 10,
+                      "key": "KeyC"
+                    },
+                    {
+                      "type": "keyUp",
+                      "delay": 10,
+                      "key": "MetaLeft"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "shortcut": "Alt+Control+Y",
+      "shortcutID": "example-menu",
+      "useFixedPosition": false,
+      "fixedMenuPosition": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchored": false,
+      "hoverMode": false,
+      "tags": []
+    }
+  ],
+  "collections": [
+    {
+      "name": "Favorites",
+      "icon": "favorite",
+      "iconTheme": "material-symbols-rounded",
+      "tags": [
+        "favs"
+      ]
+    }
+  ]
+}

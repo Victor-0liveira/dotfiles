@@ -1,0 +1,194 @@
+%YAML 1.3
+---
+- Rule:
+  - Key: [Page Up, released]
+  - KeyPress:
+    - Alt_L
+    - release
+- Rule:
+  - KeyIsDown: Page Up
+  - KeyPress:
+    - Alt_L
+    - depress
+- Rule:
+  - Key: [Page Down, released]
+  - KeyPress:
+    - Super_L
+    - release
+- Rule:
+  - KeyIsDown: Page Down
+  - KeyPress:
+    - Super_L
+    - depress
+- Rule:
+  - And:
+    - Process: org.kde.okular
+    - Key: [Middle Button, released]
+  - KeyPress:
+    - [Alt_L, '7']
+    - depress
+  - KeyPress:
+    - [Alt_L, '7']
+    - release
+- Rule:
+  - And:
+    - Process: org.kde.okular
+    - Key: [Left Tilt, released]
+  - KeyPress:
+    - [Control_L, '1']
+    - depress
+  - KeyPress:
+    - [Control_L, '1']
+    - release
+- Rule:
+  - And:
+    - Process: org.kde.okular
+    - Key: [Right Tilt, released]
+  - KeyPress:
+    - [Control_L, '4']
+    - depress
+  - KeyPress:
+    - [Control_L, '4']
+    - release
+- Rule:
+  - And:
+    - Or:
+      - Process: code
+      - Process: Code
+    - Key: [Middle Button, released]
+  - KeyPress:
+    - [v, i, e]
+    - depress
+  - KeyPress:
+    - [v, i, e]
+    - release
+- Rule:
+  - And:
+    - Or:
+      - Process: code
+      - Process: Code
+    - Key: [Left Tilt, released]
+  - KeyPress:
+    - [Control_L, Page_Up]
+    - depress
+  - KeyPress:
+    - [Control_L, Page_Up]
+    - release
+- Rule:
+  - And:
+    - Or:
+      - Process: code
+      - Process: Code
+    - Key: [Right Tilt, released]
+  - KeyPress:
+    - [Control_L, Page_Down]
+    - depress
+  - KeyPress:
+    - [Control_L, Page_Down]
+    - release
+- Rule:
+  - And:
+    - MouseGesture: Mouse Right
+  - KeyPress:
+    - [Super_L, h]
+    - depress
+  - KeyPress:
+    - [Super_L, h]
+    - release
+- Rule:
+  - MouseGesture: Mouse Left
+  - KeyPress:
+    - Print
+    - click
+- Rule:
+  - MouseGesture: Mouse Down
+  - KeyPress:
+    - [Super_L, k]
+    - depress
+  - KeyPress:
+    - [Super_L, k]
+    - release
+- Rule:
+  - Key: [MultiPlatform Gesture Button, released]
+  - MouseGesture: []
+  - KeyPress:
+    - [Control_L, Alt_L, y]
+    - depress
+  - KeyPress:
+    - [Control_L, Alt_L, y]
+    - release
+- Rule:
+  - MouseGesture: Mouse Up
+  - KeyPress:
+    - [Super_L, u]
+    - depress
+  - KeyPress:
+    - [Super_L, u]
+    - release
+- Rule:
+  - MouseGesture: Mouse Up-right
+  - KeyPress:
+    - [Super_L, j]
+    - depress
+  - KeyPress:
+    - [Super_L, j]
+    - release
+- Rule:
+  - MouseGesture: Mouse Up-left
+  - KeyPress:
+    - [Super_L, '9']
+    - depress
+  - KeyPress:
+    - [Super_L, '9']
+    - release
+- Rule:
+  - MouseGesture: Mouse Down-left
+  - KeyPress:
+    - [Super_L, o]
+    - depress
+  - KeyPress:
+    - [Super_L, o]
+    - release
+- Rule:
+  - MouseGesture: Mouse Down-right
+  - KeyPress:
+    - [Super_L, l]
+    - depress
+  - KeyPress:
+    - [Super_L, l]
+    - release
+- Rule:
+  - Key: [Forward Button, released]
+  - KeyPress:
+    - [Control_L, c]
+    - depress
+  - KeyPress:
+    - [Control_L, c]
+    - release
+- Rule:
+  - Key: [Back Button, pressed]
+  - KeyPress:
+    - [Control_L, v]
+    - depress
+  - KeyPress:
+    - [Control_L, v]
+    - release
+- Rule:
+  - Key: [Left Tilt, released]
+  - KeyPress:
+    - [Alt_L, Left]
+    - click
+- Rule:
+  - Key: [Right Tilt, released]
+  - KeyPress:
+    - [Alt_L, Right]
+    - click
+- Rule:
+  - Key: [Middle Button, released]
+  - KeyPress:
+    - F5
+    - depress
+  - KeyPress:
+    - F5
+    - release
+...

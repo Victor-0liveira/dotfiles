@@ -1,0 +1,60 @@
+import = [
+  # uncomment the flavour you want below:
+  "~/.config/alacritty/rose-pine.toml"
+  #"~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  #"~/.config/alacritty/catppuccin-macchiato.toml"
+  #"~/.config/alacritty/catppuccin-mocha.toml"
+  #"~/.config/alacritty/tokyo-night.toml"
+  # "~/.config/alacritty/tokyo-night-storm.toml"
+  # "~/.config/alacritty/tokyonight_day.toml"
+  # "~/.config/alacritty/tokyonight_moon.toml"
+  # "~/.config/alacritty/tokyonight_night.toml"
+  # "~/.config/alacritty/tokyonight_storm.toml"
+]
+
+[window]
+decorations = "None"
+dimensions = { columns = 80, lines = 30 }
+
+[window.padding]
+x = 10
+y = 10
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "MesloLGS Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "MesloLGS Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "MesloLGS Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "MesloLGS Nerd Font Mono"
+style = "Regular"
+
+[cursor.style]
+shape = "Block"
+blinking = "Always"
+
+[selection]
+save_to_clipboard = true
+
+[env]
+TERM = "xterm-256color"
+
+[keyboard]
+bindings = [
+    { key = "O", mods = "Control", action = "ScrollLineUp" },
+    { key = "I", mods = "Control", action = "ScrollLineDown" },
+    { key = "I", mods = "Control|Shift", action = "ScrollToTop" },
+    { key = "O", mods = "Control|Shift", action = "ScrollToBottom" },
+    { key = "Return", mods = "Shift", chars = "\u001B\r" }
+]
