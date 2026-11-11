@@ -124,8 +124,6 @@ flowchart LR
     THUMB --> T1["Forward → Ctrl+C"]
     THUMB --> T2["Back → Ctrl+V"]
 
-    PG --> P1["hold = Alt"]
-    PG --> P2["hold = Super"]
 
     GEST -->|"just click"| K["🥧 Kando pie menu"]
     GEST -->|"← left"| S1["📸 Screenshot"]
