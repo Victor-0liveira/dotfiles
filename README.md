@@ -111,7 +111,7 @@ flowchart LR
     M --> TILT["Wheel tilt ◀ ▶"]
     M --> THUMB["Thumb buttons"]
     M --> GEST["Gesture button<br/>+ movement"]
-    M --> PG["Page Up / Down"]
+   
 
     MID -->|"VS Code"| V1["types vie<br/>→ select all (vim mode)"]
     MID -->|"Okular"| O1["Alt+7<br/>view mode"]
